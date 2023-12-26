@@ -1,0 +1,164 @@
+nav {
+    background:white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+  }
+  
+  .menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    float: right;
+    padding-left:100px;
+    text-indent: 30;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    
+  }
+  .menu li a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  @media(max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+  }
+
+  
+  .logo{
+    font-size: 30px;
+    font-weight: bold;
+    float:left;
+    color:purple;
+    cursor:pointer;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin-right: 30px; /* Adjust as needed */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the width as needed */
+    height: auto;
+    cursor: pointer;
+  }
+    
+  .signup-btn {
+    background-color: transparent; /* Transparent background */
+    color:darkblue; /* Purple text color */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid white; /* Purple border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+}
+
+
+
+
+/* Reset some default styles for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Signup form styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.signup-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.signup-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Login and Help button styles */
+.login-btn, .help-btn {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
