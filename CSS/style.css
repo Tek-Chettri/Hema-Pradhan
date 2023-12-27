@@ -46,34 +46,15 @@ nav {
   .logo{
     font-size: 30px;
     font-weight: bold;
-    float:left;
     color:purple;
     cursor:pointer;
 }
 
-.search-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  input[type="text"] {
-    padding: 8px;
-    margin-right: 30px; /* Adjust as needed */
-  }
-  
-  .search-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 20px; /* Adjust the width as needed */
-    height: auto;
-    cursor: pointer;
-  }
+
     
   .signup-btn {
     background-color: transparent; /* Transparent background */
-    color:darkblue; /* Purple text color */
+    color:white; /* Purple text color */
     padding: 10px 20px; /* Padding */
     border: 2px solid white; /* Purple border */
     border-radius: 5px; /* Rounded corners */
@@ -101,7 +82,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #333;
+ 
   color: white;
 }
 
@@ -127,19 +108,19 @@ body {
 
 .signup-btn {
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color:white;
+  color: darkblue;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 /* Login and Help button styles */
-.login-btn, .help-btn {
+.login-btn{
   padding: 10px;
   margin-right: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color:white;
+  color:black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -161,4 +142,136 @@ body {
 .search-icon {
   width: 20px;
   height: 20px;
+}
+
+
+*{
+  padding:0;
+  margin:0 ;
+  box-sizing: border-box;
+  
+}
+
+.menu-bar{
+    background-color:white;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    color:black;
+}
+
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.active,.menu-bar ul li:hover{
+    background-color: white;
+    border-radius: 2px;
+
+
+}
+
+.submenu-1{
+    display:none;
+    position:absolute;
+background: rgb(0,100,0);
+margin-top:15px;
+margin-left: -15px;
+}
+
+/* Add styling for the menu and submenu */
+.menu-bar {
+  margin-top: 20px;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #eee;
+}
+
+.submenu-1 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+ 
+  }
+
+.nav-item:hover .submenu-1 {
+  display: block;
+}
+
+.submenu-1 li {
+  display: block;
+}
+
+
+.fa {
+  font-size: 20px;
+  float: right;
+  padding-right: 20px;
+}
+
+.signup-btn,
+.login-btn,
+.help-btn {
+    margin-right: 10px; /* Adjust the value as needed for the desired spacing */
+}
+
+.help-btn {
+  padding: 10px;
+  margin-right: 10px;
+  background-color:white;
+  color:black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+
+.login-btn {
+  margin-right: 10px; /* Adjust the value as needed for the desired spacing */
+}
+
+.help-btn {
+  margin-left: 10px; /* Adjust the value as needed for the desired spacing */
+}
+
+
+/* External CSS file or within <style> tag */
+.mixbox {
+  width: 50%; 
+  max-width: 50px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+  border: 1px solid #ccc; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  float: left;
 }
