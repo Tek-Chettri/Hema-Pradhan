@@ -264,14 +264,3 @@ margin-left: -15px;
 }
 
 
-/* External CSS file or within <style> tag */
-.mixbox {
-  width: 50%; 
-  max-width: 50px; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto;
-  border: 1px solid #ccc; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  float: left;
-}
