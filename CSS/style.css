@@ -1,189 +1,143 @@
 nav {
-    background:white;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  background:white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  float: right;
+  padding-left:100px;
+  text-indent: 30;
+}
+
+.menu li {
+  margin-right: 20px;
+  
+}
+.menu li a {
+  color:black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media(max-width: 768px) {
+  .menu {
+    display: none;
   }
   
   .menu-icon {
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+    display: block;
   }
-  
-  .menu {
-    display: flex;
-    list-style: none;
-    float: right;
-    padding-left:100px;
-    text-indent: 30;
-  }
-  
-  .menu li {
-    margin-right: 20px;
-    
-  }
-  .menu li a {
-    color:black;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  @media(max-width: 768px) {
-    .menu {
-      display: none;
-    }
-    
-    .menu-icon {
-      display: block;
-    }
-  }
-
-  
-  .logo{
-    font-size: 30px;
-    font-weight: bold;
-    color:purple;
-    cursor:pointer;
 }
 
 
-    
-  .signup-btn {
-    background-color: transparent; /* Transparent background */
-    color:white; /* Purple text color */
-    padding: 10px 20px; /* Padding */
-    border: 2px solid white; /* Purple border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor style on hover */
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color:purple;
+  cursor:pointer;
 }
+
+
+ 
 
 
 
 
 /* Reset some default styles for consistency across browsers */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* Body styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f4;
 }
 
 /* Navbar styles */
 .navbar-icons {
-  display: flex;
-  align-items: center;
-  padding: 10px;
- 
-  color: white;
+display: flex;
+align-items: center;
+padding: 10px;
+
+color: white;
 }
 
-/* Signup form styles */
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin-right: 20px;
-}
 
-.signup-form label {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.signup-form input {
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.signup-btn {
-  padding: 10px;
-  background-color:white;
-  color: darkblue;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Login and Help button styles */
-.login-btn{
-  padding: 10px;
-  margin-right: 10px;
-  background-color:white;
-  color:black;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 /* Search container styles */
 .search-container {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .search-container input {
-  padding: 8px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+padding: 8px;
+margin-right: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
 }
 
 .search-icon {
-  width: 20px;
-  height: 20px;
+width: 20px;
+height: 20px;
 }
 
 
 *{
-  padding:0;
-  margin:0 ;
-  box-sizing: border-box;
-  
+padding:0;
+margin:0 ;
+box-sizing: border-box;
+
 }
 
 .menu-bar{
-    background-color:white;
-    text-align: center;
+  background-color:white;
+  text-align: center;
 }
 
 .menu-bar ul{
-    display:inline-flex;
-    list-style: none;
-    color:black;
+  display:inline-flex;
+  list-style: none;
+  color:black;
 }
 
 .menu-bar ul li{
-    width:120px;
-    margin:15px;
-    padding:15px;
+  width:120px;
+  margin:15px;
+  padding:15px;
 }
 
 .menu-bar ul li a{
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color:black;
 }
 
 .active,.menu-bar ul li:hover{
-    background-color: white;
-    border-radius: 2px;
+  background-color: white;
+  border-radius: 2px;
 
 
 }
 
 .submenu-1{
-    display:none;
-    position:absolute;
+  display:none;
+  position:absolute;
 background: rgb(0,100,0);
 margin-top:15px;
 margin-left: -15px;
@@ -191,76 +145,365 @@ margin-left: -15px;
 
 /* Add styling for the menu and submenu */
 .menu-bar {
-  margin-top: 20px;
+margin-top: 20px;
 }
 
 .nav {
-  list-style: none;
-  padding: 0;
+list-style: none;
+padding: 0;
 }
 
 .nav-item {
-  display: inline-block;
+display: inline-block;
 }
 
 .nav-link {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+color: #333;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
 }
 
 .nav-link:hover {
-  background-color: #eee;
+background-color: #eee;
 }
 
 .submenu-1 {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
- 
-  }
+display: none;
+position: absolute;
+background-color: #fff;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
 
 .nav-item:hover .submenu-1 {
-  display: block;
+display: block;
 }
 
 .submenu-1 li {
-  display: block;
+display: block;
 }
 
 
 .fa {
-  font-size: 20px;
-  float: right;
-  padding-right: 20px;
+font-size: 20px;
+float: right;
+padding-right: 20px;
 }
 
-.signup-btn,
-.login-btn,
-.help-btn {
-    margin-right: 10px; /* Adjust the value as needed for the desired spacing */
+
+
+
+.navbar {
+width: 100%;
+background: #46315b;
+display: inline-block;
+padding: 10px;
+}
+.navbar ul{
+list-style: none;
+margin: 0 auto;
+padding:0;
 }
 
-.help-btn {
-  padding: 10px;
-  margin-right: 10px;
-  background-color:white;
-  color:black;
+.navbar ul li{
+color: #fff;
+float: left;
+line-height: 50px;
+text-align: center;
+cursor: pointer;
+font-weight: 900;
+text-transform: uppercase;
+font-family: Arial;
+transition: 0.5s;
+position: relative;
+padding:0 20px;
+}
+
+.navbar ul li:nth-child(6){
+background: #D80B15;
+}
+
+.navbar ul li:hover:not(.active){
+background: #D80B15;
+}
+
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 4px;
+  padding: 8px;
   cursor: pointer;
+}
 
+.search-btn i {
+  font-size: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 16px;
+}
+
+/* Add your custom styles here */
+
+.search-logo {
+  position: relative;
+}
+
+#search-icon {
+  cursor: pointer;
+}
+
+.search-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.search-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+/* Add your other styles */
+
+.togglesearch {
+  display: none; /* Initially hide the search bar */
+  position: absolute; /* Adjust as needed */
+  top: 50px; /* Adjust as needed */
+  left: 50px; /* Adjust as needed */
+  background-color: #a870e7; /* Adjust background color */
+  border: 1px solid red; /* Adjust border properties */
+  padding: 10px; /* Adjust padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow if needed */
+}
+
+.search-input {
+  width: 200px; /* Adjust the width of the search input */
+  padding: 8px; /* Adjust padding */
+  border: 1px solid purple; /* Adjust border properties */
+}
+
+.search-btn {
+  padding: 8px; /* Adjust padding */
+  background-color: #007bff; /* Adjust button color */
+  color: brown; /* Adjust text color */
+  border: none;
+  cursor: pointer;
+}
+
+/* Add more styles as needed */
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: mediumaquamarine;
+    border: 1px solid lightcoral;
+    z-index: 1000;
+}
+
+/* Style for buttons */
+.popup-buttons button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 
-.login-btn {
-  margin-right: 10px; /* Adjust the value as needed for the desired spacing */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-.help-btn {
-  margin-left: 10px; /* Adjust the value as needed for the desired spacing */
+.togglesearch {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-input {
+  padding: 10px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.search-btn {
+  background-color:black;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+
+p {
+  text-align: center;
+}
+
+.search-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#search-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+#login-popup, #signup-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.popup button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #333;
+}
+
+/* Add more styles as needed */
+
+.mid {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mid div {
+  font-size: 80px;
+  margin-bottom: 5px; 
+  margin-top: 5;/* Adjust spacing between lines as needed */
+}
+
+.top-line {
+  color:black; /* Adjust the color as needed */
+}
+
+.middle-line {
+  color: black; /* Adjust the color as needed */
+}
+
+.bottom-line {
+  color: black; /* Adjust the color as needed */
 }
 
 
+
+.create-yours {
+  text-align: center;
+}
+
+.create-yours button {
+  display: inline-block;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 23%;
+  background-color: #3498db; /* Set your preferred background color */
+  color: #ffffff; /* Set your preferred text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-yours button:hover {
+  background-color: #2980b9;
+}
