@@ -35,5 +35,10 @@ function signup() {
     closePopup();
 }
 
+function signup() {
+    // Add your signup logic here
+    alert('Signup logic goes here');
+    closePopup();
+}
 
 
