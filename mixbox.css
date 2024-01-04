@@ -1,0 +1,209 @@
+@media (min-width: 992px){
+	.dropdown-menu .dropdown{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	
+
+	}
+	}
+
+
+    
+
+.mid {
+    text-align: center;
+    margin-top: 50px; /* Adjust the top margin as needed */
+    font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.top-line,
+.middle-line,
+.bottom-line {
+    font-weight: 700;
+    font-size: 70px;
+    color: #333; /* Adjust the color as needed */
+    margin-top: 10px; /* Adjust the bottom margin as needed */
+}
+.create-yours {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000; /* Border color, change as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    background-color:rgb(43, 43, 250); /* Add background color */
+}
+
+.create-yours button {
+    padding: 8px 16px; /* Adjust button padding as needed */
+    cursor: pointer;
+    border: none; /* Remove default button border */
+    background-color: transparent; /* Set background color to transparent */
+
+}
+
+.yy {
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+	font-size:50px;
+	font-weight: bold;
+
+}
+.bottom-photo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add a margin at the bottom of the image */
+}
+
+.pictures img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add a margin at the bottom of each image */
+}
+
+.card-group {
+    display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; /* Center the cards horizontally */
+}
+
+.card.pictures {
+    text-align: center; /* Center images horizontally */
+    margin: 0 10px; /* Add some margin between the cards */
+	transition: background-color 0.3s ease;
+}
+
+.card.pictures img {
+    width: 100%; /* Make the images inside the card take 100% width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Set a maximum width for the images */
+}
+
+.card.pictures:hover {
+    background-color: aqua; /* Change background color on hover, adjust as needed */
+}
+
+
+.card-row:nth-child(even) {
+    background-color: #f0f0f0; /* Background color for even rows */
+}
+
+.card.pictures h1 {
+    font-weight: bold; /* Make the text bold */
+    font-size: 30px; /* Set the desired font size, adjust as needed */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+                                           
+footer h1 small {
+    font-size: 80%; /* You can adjust the percentage as needed */
+}
+
+footer .card-img-top {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    display:block;
+    margin:0 auto;
+    max-height: 300px;
+}
+
+footer .col-lg-3 {
+    border-right: 1px solid black; /* Add a right border to each column */
+    padding-right: 15px;
+    margin-right: 0;
+
+}
+
+footer .col-lg-3 {
+    border-right: 1px solid black; /* Add a right border to each column */
+    padding-right: 30px; /* Add some padding to visually separate the content from the border */
+    margin-right: 60px; /* Add a margin to create a gap between columns */
+}
+
+footer .col-lg-3:last-child {
+    border-right: none; /* Remove the right border from the last column */
+    padding-right: 0; /* Remove the padding from the last column */
+    margin-right: 0; /* Remove the margin from the last column */
+}
+
+.p-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+.p-container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section.text-center {
+    text-align: center;
+}
+
+.section h5 {
+    font-size: 16px; /* Adjust the font size for the text */
+}
+
+.p-container {
+    margin-top: 100px; /* Adjust the margin value as needed */
+}
+
+.custom-flex {
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.left-images, .right-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between images */
+}
+
+.center-image img 
+.left-images img,
+.right-images img{
+    width: 100%;
+    height: auto;
+    max-height: 50vh; /* Ensure the center image does not exceed viewport height */
+}
+    
+    .left-images,
+.right-images,
+.center-image {
+    max-width: 10%; /* Set the maximum width for all images to 100% of their container */
+}
+
+.center-image {
+    max-width: 100%; /* Set the maximum width for the center image to 50% of the container */
+    text-align: center; /* Center the image horizontally */
+}
+
+.center-image img {
+    width: 50%; /* Set the width of the center image to 50% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 50vh; /* Set a maximum height for the center image */
+}
+
+
+
+
+
+
+
