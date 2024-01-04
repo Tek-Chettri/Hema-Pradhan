@@ -69,12 +69,13 @@
     display: flex;
 	flex-wrap: wrap; 
 	justify-content: center; /* Center the cards horizontally */
+
 }
 
 .card.pictures {
     text-align: center; /* Center images horizontally */
     margin: 0 10px; /* Add some margin between the cards */
-	transition: background-color 0.3s ease;
+	transition: transform 0.3s ease;
 }
 
 .card.pictures img {
@@ -84,20 +85,17 @@
 }
 
 .card.pictures:hover {
-    background-color: aqua; /* Change background color on hover, adjust as needed */
+    transform: scale(1.1);
 }
 
 
-.card-row:nth-child(even) {
-    background-color: #f0f0f0; /* Background color for even rows */
-}
 
 .card.pictures h1 {
     font-weight: bold; /* Make the text bold */
     font-size: 30px; /* Set the desired font size, adjust as needed */
     margin-top: 10px; /* Add some top margin for spacing */
 }
-                                           
+                                         
 footer h1 small {
     font-size: 80%; /* You can adjust the percentage as needed */
 }
@@ -161,49 +159,268 @@ footer .col-lg-3:last-child {
 body, html {
     height: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .image-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh;
+    overflow: hidden;
 }
 
-.left-images, .right-images {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Adjust the gap between images */
-}
-
-.center-image img 
-.left-images img,
-.right-images img{
-    width: 100%;
-    height: auto;
-    max-height: 50vh; /* Ensure the center image does not exceed viewport height */
-}
-    
-    .left-images,
+.left-images,
 .right-images,
 .center-image {
-    max-width: 10%; /* Set the maximum width for all images to 100% of their container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.center-image {
-    max-width: 100%; /* Set the maximum width for the center image to 50% of the container */
-    text-align: center; /* Center the image horizontally */
+.top-images,
+.bottom-images
+ {
+    display: flex;
+    gap: 5px; /* Adjust the gap between images */
 }
 
-.center-image img {
-    width: 50%; /* Set the width of the center image to 50% of its container */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 50vh; /* Set a maximum height for the center image */
+.image-container img {
+    width: 80%;
+    height: auto;
+    max-height: 40vh; /* Adjust the height of the images as needed */
+    transition: transform 0.3s ease;
 }
 
+.image-container img:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the hover effect */
+}
+/* Common styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Button container styles */
+  .explore-button {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  .year-in-review-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  /* Image container styles */
+  .black-img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Image styles */
+  .black-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* Content container styles */
+  .content-container {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    left: 5%;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  /* Content text styles */
+  .content-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .content-container h2 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .content-container .deal-button {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-align: center;
+    background-color: purple;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Icon above container styles */
+  .icon-above {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffede7;
+    padding: 20px;
+  }
+  
+  /* Icon above text styles */
+  .icon-above h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Icon row styles */
+  .icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Individual icon styles */
+  .icon {
+    margin: 10px;
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Icon caption styles */
+  .icon-caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+  
+  /* Heading 2 styles */
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  /* TM styles */
+  .tm {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .explore-button {
+      margin-bottom: 10px;
+    }
+  
+    .year-in-review-button {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+  
+    .content-container h1 {
+      font-size: 16px;
+    }
+  
+    .content-container h2 {
+      font-size: 12px;
+    }
+  
+    .content-container .deal-button {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    .icon-above h1 {
+      font-size: 16px;
+    }
+  
+    .icon-row {
+      flex-direction: column;
+    }
+  
+    .icon {
+      width: 60px;
+    }
+  
+    .icon-caption {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .tm {
+      font-size: 50px;
+      padding-top: 20px;
+    }
+  }
+  .flex-container {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden; 
+    margin-bottom: 20%;
+  }
 
+  
+  .video-container {
+    flex: 1;
+    position: relative;
+    padding-bottom: 40%;
+    overflow: hidden;
+  }
 
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+right: 200px;
+  }
 
+  .flex-container2 {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    
+    margin-bottom: 20px; /* Add a gap at the bottom */
+  }
 
+  /* Style for the Vimeo iframe */
+  .video-container2 {
+    flex: 1; /* Take remaining space in the flex container */
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 video */
+    overflow: hidden;
+  }
 
-
+  .video-container2 iframe {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
