@@ -159,7 +159,7 @@ footer .col-lg-3:last-child {
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .image-container {
@@ -317,6 +317,7 @@ body {
   h2 {
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
   
   /* TM styles */
@@ -364,12 +365,14 @@ body {
     }
   
     .icon-caption {
-      font-size: 12px;
+      font-size: 24px;
       padding: 10px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
   
     h2 {
       font-size: 16px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
   
     .tm {
@@ -390,6 +393,7 @@ body {
     position: relative;
     padding-bottom: 40%;
     overflow: hidden;
+    width: 50px;
   }
 
   .video-container iframe {
@@ -405,7 +409,7 @@ right: 200px;
     max-width: 100%;
     overflow: hidden;
     
-    margin-bottom: 20px; /* Add a gap at the bottom */
+    margin-bottom: 10px; /* Add a gap at the bottom */
   }
 
   /* Style for the Vimeo iframe */
@@ -424,3 +428,247 @@ right: 200px;
     left: 0;
   }
   
+  .heading{
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .heading{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   
+  }
+
+  .start-creating-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.start-creating-button:hover {
+    background-color: #8a2be2; /* Darker purple on hover */
+    border-radius: 20px; /* Larger border-radius on hover */
+}
+.start-creating {
+  text-align: center;
+  margin-top: 10vh; /* Adjust margin-top to center vertically */
+}
+
+.alb-heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ 
+}
+
+.flex-albumn {
+  display: flex;
+  flex-direction: column;
+  align-items:center; /* Center items horizontally */
+}
+
+.flex-albumn img {
+  width: 200%; /* Use width instead of max-width */
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+
+.flex-albumn h2, .flex-albumn h1 {
+  margin-right: 30px;
+  text-align: right; 
+  font-weight: bold;
+}
+
+.card-above{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.card-images {
+  display: flex;
+flex-wrap: wrap; 
+justify-content: center; /* Center the cards horizontally */
+
+}
+
+.card.images {
+  text-align: center; /* Center images horizontally */
+  margin: 0 10px; /* Add some margin between the cards */
+transition: transform 0.3s ease;
+}
+
+.card.images img {
+  width: 100%; /* Make the images inside the card take 100% width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Set a maximum width for the images */
+}
+
+.card.images:hover {
+  transform: scale(1.1);
+}
+.card.images h1 {
+  font-weight: bold; /* Make the text bold */
+  font-size: 30px; /* Set the desired font size, adjust as needed */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.hug-img{
+  margin-top: 50px;
+}
+.hug-img h1, .hug-img h2 {
+  margin-left:700px; 
+  
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px; /* Adjust the spacing between reviews as needed */
+  overflow-x: auto; /* Enable horizontal scrolling if reviews don't fit */
+  background-color: #ffede7;
+}
+
+.review {
+  width: 250px; /* Adjust the width of each review card as needed */
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.head-review img {
+  max-width: 50%;
+  height: auto;
+}
+
+.name-review {
+  font-weight: bold;
+}
+
+.rating {
+  color:green;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trip {
+  display: flex;
+  align-items: center;
+}
+
+.trip img {
+  max-width: 40%; /* Ensure the image doesn't exceed its container */
+}
+
+.trip h1,
+.trip h2 {
+  flex: 1; /* Allow headings to take up remaining space */
+  margin-left: 20px; /* Add margin for spacing between image and text */
+}
+.download-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.download-button img {
+  width: 40px; /* Adjust the size of the Apple logo */
+  margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.third-last {
+  text-align: center;
+}
+
+.third-last h1,
+.third-last h2 {
+  margin-top: 30px; /* Remove default margin for headings */
+}
+.add-more {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  position: relative;
+  text-align: center;
+  margin: 0 10px; /* Optional: Add spacing between image-cards */
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 200px; /* Set a fixed width for all images */
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.overlay-icons i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-icons i:hover {
+  transform: scale(1.2);
+}
+
+
+
