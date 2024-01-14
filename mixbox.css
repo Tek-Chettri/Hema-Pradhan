@@ -12,10 +12,12 @@
 
     
 
-.mid.headertext {
+.mid-header-text {
     text-align: center;
     margin-top: 50px; /* Adjust the top margin as needed */
     font-family: 'Source Sans Pro', sans-serif;
+    
+   
     
 	
 }
@@ -28,24 +30,27 @@
     font-size: 70px;
     
     margin-top: 10px; /* Adjust the bottom margin as needed */
+    
 }
 .create-yours {
     text-align: center;
     margin: auto;
     width: fit-content;
     padding: 10px;
-    border: 2px solid #000; /* Border color, change as needed */
+     /* Border color, change as needed */
     border-radius: 10px; /* Adjust border radius as needed */
     background-color:rgb(43, 43, 250); /* Add background color */
 }
 
 .create-yours button {
-    padding: 8px 16px; /* Adjust button padding as needed */
-    cursor: pointer;
-    border: none; /* Remove default button border */
-    background-color: transparent; /* Set background color to transparent */
-
+  padding: 6px 16px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: wheat;
+  border-radius: 50% !important; /* Add !important to ensure overriding */
 }
+
 
 .yy {
     text-align: center;
@@ -55,16 +60,24 @@
 	font-weight: bold;
 
 }
-.bottom-photo img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px; /* Add a margin at the bottom of the image */
+.parallax-container {
+  overflow: hidden;
+  height: 100vh;
 }
 
-.pictures img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px; /* Add a margin at the bottom of each image */
+
+.parallax-layer {
+  width: 100%;
+  height: auto;
+  transform: translateZ(0);
+  transition: transform 0.5s ease-out; 
+  position: relative; 
+}
+
+.parallax-layer img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .card-group {
@@ -165,40 +178,66 @@ body, html {
 }
 
 .image-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 10px;
 }
 
-.left-images,
-.right-images,
 .center-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  width: 25%; /* Adjust the width of the center image as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-images img,
+.right-images img{
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  
+    margin-bottom: 10px; 
+    margin-left: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+ 
+}
+
+.left-images .top-images img,
+.left-images .bottom-images img,
+.right-images .top-images img,
+.right-images .bottom-images img {
+  margin-bottom: 30px; /* Adjust the margin between small images as needed */
+  margin-left: 10px; /* Adjust the margin between small images as needed */
+  width: 20px; /* Set the width of small images */
+  height: auto;
+  width: 200px;
+  margin-top: 30px;
 }
 
 .top-images,
-.bottom-images
- {
-    display: flex;
-    gap: 5px; /* Adjust the gap between images */
+.bottom-images {
+  display: flex;
+  gap: 5px;
 }
 
 .image-container img {
-    width: 80%;
-    height: auto;
-    max-height: 40vh; /* Adjust the height of the images as needed */
-    transition: transform 0.3s ease;
+  max-width: 100%; /* Ensure the center image doesn't exceed its container */
+  height: auto;
+  transition: transform 0.3s ease,box-shadow 0.3s ease;;
+  
+  border-radius: 10px; /* Add border-radius */
 }
 
+
+
 .image-container img:hover {
-    transform: scale(1.1); /* Adjust the scale factor for the hover effect */
+  transform: scale(1.2);
 }
-/* Common styles */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -805,41 +844,43 @@ summary {
 
 .contact-us {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
 }
 
 .contact-us button {
   position: relative;
   display: block;
-  width: 300px; /* Adjust the width as needed */
-  padding: 20px;
+  width: 400px; /* Adjust the width as needed */
+  padding: 10px;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color:black;
+  color: black;
   background-color: white; /* Choose a color that fits your design */
   border: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  margin-bottom: 20px; /* Adjust the margin-bottom to add a gap */
+  margin-bottom: 10px; /* Adjust the margin-bottom to add a gap */
   margin-top: 40px;
 }
 
-
-
-
-
-.contact-us h1 {
-  margin: 0;
+.contact-us button div {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-us h2 {
+.contact-us button span {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us button p {
   font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 0;
   color: #333; /* Adjust the color as needed */
 }
+
 
 .horizontal-line {
   margin-top: 20px; /* Adjust the margin-top to add space above the line */
@@ -1076,3 +1117,62 @@ text-align: left;
   display: block;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+ 
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color:black;
+  padding: 15px;
+}
+
+.color-black {
+  color: #000;
+}
+input[type="text"] {
+  border: 2px solid darkblue;
+  padding: 10px 20px;
+
+}
+
+button[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  border: 2px solid darkblue;
+  border-radius: 30px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+}
+
+.image-container img {
+  box-shadow: 0 0 10px whitesmoke; /* Adjust the values for the shadow color and size */
+}
+
+.center-image img {
+  box-shadow: none; /* Remove shadow for the center image */
+}
