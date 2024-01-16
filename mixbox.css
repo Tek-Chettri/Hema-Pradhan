@@ -37,9 +37,8 @@
     margin: auto;
     width: fit-content;
     padding: 10px;
-     /* Border color, change as needed */
-    border-radius: 10px; /* Adjust border radius as needed */
-    background-color:rgb(43, 43, 250); /* Add background color */
+     border-radius: 20px;
+    background-color: #8a2be2; 
 }
 
 .create-yours button {
@@ -48,7 +47,10 @@
   border: none;
   background-color: transparent;
   color: wheat;
-  border-radius: 50% !important; /* Add !important to ensure overriding */
+}
+.create-yours-button:hover {
+  background-color: #8a2be2; /* Darker purple on hover */
+/* Larger border-radius on hover */
 }
 
 
@@ -257,10 +259,10 @@ body {
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-    background-color: purple;
+    background-color: #8a2be2; ;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
   }
   
@@ -309,7 +311,7 @@ body {
     padding: 8px 15px;
     font-size: 14px;
     text-align: center;
-    background-color: purple;
+    background-color:  #8a2be2; ;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -486,7 +488,8 @@ right: 200px;
   }
 
   .start-creating-button {
-    background-color: purple;
+    background-color: #8a2be2; /* Darker purple on hover */
+    border-radius: 20px;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -497,11 +500,12 @@ right: 200px;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    border-radius: 20px; 
   }
 
 .start-creating-button:hover {
     background-color: #8a2be2; /* Darker purple on hover */
-    border-radius: 20px; /* Larger border-radius on hover */
+  /* Larger border-radius on hover */
 }
 .start-creating {
   text-align: center;
@@ -719,7 +723,7 @@ transition: transform 0.3s ease;
 .bottom {
   display: inline-block;
   padding: 20px 20px;
-  background-color: purple;
+  background-color:  #8a2be2; ;
   color: white;
   border-radius: 10px;
   font-size: 16px;
@@ -727,7 +731,7 @@ transition: transform 0.3s ease;
 }
 
 .bottom:hover {
-  background-color: darkpurple;
+  background-color: #8a2be2; ;
 }
 
 
@@ -781,7 +785,7 @@ summary {
 
 }
 .last-div{
-  background-color: #4e098a;
+  background-color:  #8a2be2;
 }
 
 .footer-email {
@@ -1001,7 +1005,7 @@ summary {
   display: flex;
   justify-content: space-around; /* Adjust as needed for spacing */
   padding: 20px;
-  background-color:#4e098a; /* Adjust as needed for background color */
+  background-color: #8a2be2; ; /* Adjust as needed for background color */
 }
 
 .footer-list {
